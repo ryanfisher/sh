@@ -1,0 +1,305 @@
+#main_nav {
+    padding-top: 40px;
+    position: relative;
+    height: 100px;
+    width: 615px;
+    left: -400px;
+}
+
+#main_nav_index {
+    padding-top: 150px;
+}
+
+#main_nav_index #logo {
+}
+
+#main_nav_index #link-group {
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 10px;
+}
+
+#main_nav_index #link-group .concept {
+}
+
+#main_nav_index #link-group .collage {
+
+}
+
+
+#main_nav_index #link-group .collect {
+    padding-top:2px;
+}
+
+#main_nav_index #link-group .connect {
+    padding-top: 5px;
+}
+
+#main_nav_index #infoline {
+    position: relative;
+    top: 8px;
+    padding-left: 10px;
+}
+
+#main_nav_index #giraffe {
+    vertical-align: top;
+    position: relative;
+    top: 124px;
+    padding-left: 11px;
+}
+
+#nav_wrapper {
+    position: relative;
+    height: 140px;
+    width: 500px;
+    left: 50%;
+}
+
+#home_page #main_nav {
+    padding-top: 200px;
+}
+
+#main_nav #logo {
+    height: 102px;
+    width: 97px;
+}
+
+#main_nav .collage {
+    position: relative;
+    padding-left: 20px;
+    top: 6px;
+}
+
+#main_nav .concept {
+    position: relative;
+    top: 6px;
+    padding-left: 20px;
+}
+
+#main_nav .connect {
+    position: relative;
+    top: -2px;
+    padding-left: 20px;
+}
+
+#main_nav .collect {
+    position: relative;
+    top: -2px;
+    padding-left: 20px;
+}
+
+#main_nav .second {
+    padding-left: 23px;
+}
+
+#main_nav .third {
+    padding-left: 18px;
+}
+
+#main_nav .fourth {
+}
+
+#collect_body .collect {
+    position: relative;
+    left: 10px;
+}
+
+#collect_body .collage {
+    position: relative;
+    left: 10px;
+}
+
+#collect_body .concept {
+    position: relative;
+    left: 10px;
+}
+
+#collect_body .connect {
+    position: relative;
+    left: 10px;
+}
+
+.thumbnail {
+    padding: 5px;
+}
+
+#thumbnails {
+    padding-left: 40px;
+    padding-top: 40px;
+}
+
+#thumbnails a:hover {
+    text-decoration: none;
+}
+
+#main_nav .gradient {
+    
+    width: 130px;
+    
+    position: absolute;
+    left: 125px;
+    top: 0px;
+    margin: 0px;
+    padding: 0px;
+    z-index: -1;
+}
+
+#concept_body .gradient {
+    background-image: url('../images/GradientBeige.png');
+    height: 514px;
+}
+
+#connect_body .gradient {
+    /*background-image: url('../images/GradientGrey.png');
+    height: 497px;*/
+    background-image: url('../images/GradientBeige.png');
+    height: 514px;
+}
+
+#collect_body .gradient {
+    background-image: url('../images/GradientGrey.png');
+    height: 497px;
+}
+
+#collage_body .gradient {
+    background-image: url('../images/GradientCyan.png');
+    height: 521px;
+}
+
+#advertising_design {
+    position: relative;
+    left: -210px;
+}
+
+#mixed_media {
+    position: relative;
+    left: -210px;
+}
+
+#connect_info {
+    font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 320px;
+    min-height: 800px;
+    background-image: url('../images/GiraffeCrop.png');
+    background-repeat: no-repeat;
+    background-position: 200px 500px;
+}
+
+#img-block {
+    width: inherit;
+    margin: 0 auto;
+}
+#resume_link {
+    margin-top: 40px;
+    padding-top: 20px;
+    color: #333333;
+    font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+    font-size: 20px;
+}
+
+#email_link {
+    padding-top: 5px;
+    color: #333;
+    clear: both;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #0a64a4;
+}
+
+a:hover, a:active {
+    text-decoration: underline;
+}
+
+#headshot {
+    width:200px;
+    height:200px;
+    padding-top: 20px;
+}
+
+#lacquerie_logo {
+    clear: both;
+    height: 70px;
+    width: 200px;
+}
+
+#social-media-links {
+    padding: 10px 50px 10px;
+    text-align: center;
+}
+
+#social-media-links li {
+    display: block;
+    float: left;
+    background-color: #AC8E69;
+    background-color: #58585A;
+    width: 35px;
+    height: 35px;
+    margin: 3px 10px 10px;
+    text-align: center;
+    vertical-align: middle;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    border-radius: 4px;
+}
+
+#social-media-links a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url('../images/connect/all-icons.png');
+    background-repeat: no-repeat;
+}
+
+#social-media-links a.twitter {
+    background-position: -40px;
+}
+
+#social-media-links a.facebook {
+    background-size: 30px 30px;
+    background-position: 3px;
+    background-image: url('../images/connect/pinterest-icon.png');
+}
+
+#social-media-links a.linkedin {
+    background-position: -78px;
+}
+
+#social-media-links a.instagram {
+    background-position: -113px 4px;
+}
+
+#web-property-links {
+    margin-top: 15px;
+    padding: 0px 20px 10px;
+}
+
+#web-property-links  img {
+    height: 36px;
+    width: 60px;
+}
+
+#web-property-links li {
+    float: left;
+    padding: 0px 40px 0px;
+}
+
+#web-property-links li.blog {
+    border-right: 1px solid #58585A;
+    padding-right: 21px;
+    padding-left: 58px;
+}
+
+#web-property-links li.etsy {
+    padding-right: 58px;
+    padding-left: 22px;
+}
+
+#web-property-links a {
+}
