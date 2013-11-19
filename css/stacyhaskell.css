@@ -151,8 +151,6 @@
 }
 
 #connect_body .gradient {
-    /*background-image: url('../images/GradientGrey.png');
-    height: 497px;*/
     background-image: url('../images/GradientBeige.png');
     height: 514px;
 }
@@ -182,11 +180,12 @@
     text-align: center;
     margin: 0 auto;
     padding-top: 20px;
+    padding-left: 50px;
     width: 320px;
     min-height: 800px;
     background-image: url('../images/GiraffeCrop.png');
     background-repeat: no-repeat;
-    background-position: 200px 500px;
+    background-position: 240px 400px;
 }
 
 #img-block {
@@ -194,11 +193,12 @@
     margin: 0 auto;
 }
 #resume_link {
-    margin-top: 40px;
+    display: block;
+    margin-top: 20px;
     padding-top: 20px;
-    color: #333333;
-    font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
-    font-size: 20px;
+    color: #555;
+    font-family: Helvetica, ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+    font-size: 18px;
 }
 
 #email_link {
@@ -217,62 +217,65 @@ a:hover, a:active {
 }
 
 #headshot {
-    width:200px;
-    height:200px;
+    width: 275px;
+    height: auto;
     padding-top: 20px;
 }
 
 #lacquerie_logo {
     clear: both;
-    height: 70px;
-    width: 200px;
+    height: auto;
+    width: 275px;
 }
 
 #social-media-links {
-    padding: 10px 50px 10px;
+    padding: 10px 1px;
     text-align: center;
+    width: 320px;
 }
 
 #social-media-links li {
-    display: block;
-    float: left;
-    background-color: #AC8E69;
-    background-color: #58585A;
-    width: 35px;
-    height: 35px;
-    margin: 3px 10px 10px;
-    text-align: center;
-    vertical-align: middle;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -khtml-border-radius: 4px;
-    border-radius: 4px;
+    display: inline-block;
+    margin: 5px 0 0;
 }
 
 #social-media-links a {
-    display: block;
+    display: inline-block;
     width: 30px;
     height: 30px;
-    background-image: url('../images/connect/all-icons.png');
-    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-#social-media-links a.twitter {
-    background-position: -40px;
+#social-media-links [data-link-target="Twitter"] {
+    background-image: url('../images/connect/twitter.png');
 }
 
-#social-media-links a.facebook {
-    background-size: 30px 30px;
-    background-position: 3px;
-    background-image: url('../images/connect/pinterest-icon.png');
+#social-media-links [data-link-target="Pinterest"] {
+    background-image: url('../images/connect/pinterest.png');
 }
 
-#social-media-links a.linkedin {
-    background-position: -78px;
+#social-media-links [data-link-target="Etsy"] {
+    background-image: url('../images/connect/etsy.png');
 }
 
-#social-media-links a.instagram {
-    background-position: -113px 4px;
+#social-media-links [data-link-target="Facebook"] {
+    background-image: url('../images/connect/facebook.png');
+}
+
+#social-media-links [data-link-target="Flickr"] {
+    background-image: url('../images/connect/flickr.png');
+}
+
+#social-media-links [data-link-target="Instagram"] {
+    background-image: url('../images/connect/instagram.png');
+}
+
+#social-media-links [data-link-target="Email"] {
+    background-image: url('../images/connect/mail.png');
+}
+
+#social-media-links [data-link-target="Linkedin"] {
+    background-image: url('../images/connect/linkedin.png');
 }
 
 #web-property-links {

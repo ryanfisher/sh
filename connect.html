@@ -7,7 +7,6 @@ Stacy Haskell - Connect
 <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.8.2r1/build/reset-fonts-grids/reset-fonts-grids.css">
 <link rel="stylesheet" type="text/css" href="css/stacyhaskell.css" media="screen" />
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
-<script type="text/javascript" src="js/stacyhaskell.js"></script>
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -21,6 +20,14 @@ Stacy Haskell - Connect
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
+
+  jQuery(document).ready(function() {
+    jQuery('#social-media-links a').click(function(event) {
+      link_target = $(event.currentTarget).data('link-target');
+      _gaq.push(['_trackEvent', 'Outbound Link', link_target]);
+      _gaq.push(['sh._trackEvent', 'Outbound Link', link_target]);
+    });
+  });
 
 </script>
 </head>
@@ -36,19 +43,19 @@ Stacy Haskell - Connect
 </div>
 </div>
 <div id="connect_info">
-    <img src="images/NewPic.jpg" id="headshot" />
+    <img src="images/connect/author-275px.jpg" id="headshot" />
     <ul id="social-media-links">
-        <li><a href="https://twitter.com/thelacquerie" onClick="_gaq.push(['_trackEvent', 'Outbound Link', 'Twitter']);" target="_blank" class="twitter"></a></li>
-        <li><a href="http://pinterest.com/thelacquerie/" onClick="_gaq.push(['_trackEvent', 'Outbound Link', 'Pinterest']);" target="_blank" class="facebook"></a></li>
-        <li><a href="http://www.linkedin.com/pub/stacy-haskell/9/4a2/3b3" onClick="_gaq.push(['_trackEvent', 'Outbound Link', 'Linkedin']);" target="_blank" class="linkedin"></a></li>
-        <li><a href="http://instagram.com/thelacquerie" onClick="_gaq.push(['_trackEvent', 'Outbound Link', 'Instagram']);" target="_blank" class="instagram"></a></li>
+      <li><a href="http://twitter.com/thelacquerie" target="_blank" data-link-target="Twitter"></a></li>
+      <li><a href="http://facebook.com/thelacquerie" target="_blank" data-link-target="Facebook"></a></li>
+      <li><a href="http://pinterest.com/thelacquerie" target="_blank" data-link-target="Pinterest"></a></li>
+      <li><a href="http://instagram.com/thelacquerie" target="_blank" data-link-target="Instagram"></a></li>
+      <li><a href="http://www.flickr.com/photos/thelacquerie/" target="_blank" data-link-target="Flickr"></a></li>
+      <li><a href="http://www.etsy.com/shop/TheLacquerie" target="_blank" data-link-target="Etsy"></a></li>
+      <li><a href="http://www.linkedin.com/pub/stacy-haskell/9/4a2/3b3" target="_blank" data-link-target="Linkedin"></a></li>
+      <li><a href="mailto:thelacquerie@gmail.com" data-link-target="Email"></a></li>
     </ul>
-    <a href="http://thelacquerie.com"><img src="images/connect/LogoWeb.jpg" id="lacquerie_logo" /></a>
-    <ul id="web-property-links">
-        <li class="blog"><a href="http://thelacquerie.com" onClick="_gaq.push(['_trackEvent', 'Outbound Link', 'Blog']);" target="_blank"><img src="images/connect/blog.png" /></a></li>
-        <li class="etsy"><a href="http://etsy.com/shop/thelacquerie" onClick="_gaq.push(['_trackEvent', 'Outbound Link', 'Etsy']);" target="_blank"><img src="images/connect/etsy.png" /></a></li>
-    </ul>
-    <div id="email_link">thelacquerie@gmail.com</div>
+    <a href="http://thelacquerie.com" onClick="_gaq.push(['_trackEvent', 'Outbound Link', 'Blog']);" target="_blank"><img src="images/connect/lacquerie-logo-275px.jpg" id="lacquerie_logo" /></a>
+
     <a href="images/Haskell_Resume.pdf" onClick="_gaq.push(['_trackEvent', 'Static Link', 'Resume']);" id="resume_link">resume</a>
 </div>
 </body>
